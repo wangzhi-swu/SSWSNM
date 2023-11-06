@@ -1,0 +1,24 @@
+idx = 70;
+k = 0.005;
+subplot(1,2,1);
+% myDc = myDc./max(max(max(myDc)));
+tmp = myDc(:,:,idx);
+tmp = sort(tmp(:));
+minv = tmp(fix(numel(tmp)*0.02));
+maxv =  tmp(fix(numel(tmp)*0.98));
+imagesc(myDc(:,:,idx),[0,0.5]);
+% imagesc(myDc(:,:,idx),[minv-k,maxv+k]);
+set (gcf,'Position',[250,250,850,400]);
+colormap('gray');
+title(['Clean ',num2str(idx),'th band']);
+subplot(1,2,2);
+
+tmp = estImg(:,:,idx);
+tmp = sort(tmp(:));
+minv = tmp(fix(numel(tmp)*0.02));
+maxv =  tmp(fix(numel(tmp)*0.98));
+imagesc(estImg(:,:,idx),[0,0.5]);
+% imagesc(estImg(:,:,idx),[minv-k,maxv+k]);
+set (gcf,'Position',[250,250,850,400]);
+colormap('gray');
+title(['Recovery ',num2str(idx),'th band']);
