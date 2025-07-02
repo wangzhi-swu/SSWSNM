@@ -2,9 +2,9 @@
 
 Matlab Code for hyperspectral image denoising:
 
-Reference: Tianyu Liu, Dong Hu, Haoming Ding, Wu Chen, and Zhi Wang*. Hyperspectral Image Denoising via Spectral-Spatial Weighted Schatten p-norm Minimization. Submitted, 2023.
+Reference: Dong Hu, Tianyu Liu, Yusen Tan, Chuan Li, Wu Chen, and Zhi Wang*. Hyperspectral Image Denoising via Spectral-Spatial Weighted Schatten p-norm Minimization. Submitted, 2023.
 
-This code is written by Tianyu Liu under the guidance of Dr. Zhi Wang, Southwest Universiy, 2023
+This code is written by Tianyu Liu and Dong Hu under the guidance of Dr. Zhi Wang, Southwest Universiy, 2023
 
 For algorithm interpretation, please read our paper, in which more details are demonstrated.
 
